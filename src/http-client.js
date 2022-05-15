@@ -376,6 +376,8 @@ export default opts => {
     dustTransfer: payload => privCall('/sapi/v1/asset/dust', payload, 'POST'),
     accountCoins: payload => privCall('/sapi/v1/capital/config/getall', payload),
 
+    stakingPosition: payload => privCall('/sapi/v1/staking/position', payload),
+
     getBnbBurn: payload => privCall('/sapi/v1/bnbBurn', payload),
     setBnbBurn: payload => privCall('/sapi/v1/bnbBurn', payload, 'POST'),
 
